@@ -24,6 +24,7 @@ pipeline {
                 sh 'npm init vite@latest my-vue-app -- --template vue'
                 sh 'du -a'
                 sh 'cd ./my-vue-app'
+                sh 'du -a'
                 sh 'npm install'
                 sh 'npm run dev'
                 //sh 'npm create vue@latest'
