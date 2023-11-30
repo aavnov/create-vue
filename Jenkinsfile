@@ -23,7 +23,7 @@ pipeline {
                 //sh 'npm create vite@latest my-vue-app -- --template vue-ts'
                 sh 'npm init vite@latest my-vue-app -- --template vue'
                 sh 'pwd'
-                sh 'cd ./my-vue-app'
+                sh 'cd  /var/jenkins_home/workspace/create-vue_main'
                 sh 'pwd ./my-vue-ap'
                 sh 'ls -a'
                 sh 'npm install'
