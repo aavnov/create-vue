@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                npm create vue@latest
+                
                 //sh 'npm install create-vite@latest'
                 //sh 'npm init vue@latest'
                 //sh 'npm install create-vite@5.0.0'
