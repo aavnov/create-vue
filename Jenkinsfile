@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
+                sh 'npm create vite@latest my-vue-app -- --template vue-ts'
             }
         }
         stage('Test') {
