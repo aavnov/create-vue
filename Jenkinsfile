@@ -17,10 +17,11 @@ pipeline {
         stage('Build') {
             steps {
                 
-                sh 'npm install create-vite@latest'
-                sh 'npm init vue@latest'
+                //sh 'npm install create-vite@latest'
+                //sh 'npm init vue@latest'
                 sh 'npm install create-vite@5.0.0'
-                sh 'npm create vite@latest my-vue-app -- --template vue-ts'
+                //sh 'npm create vite@latest my-vue-app -- --template vue-ts'
+                sh 'npm init vite@latest my-vue-app -- --template vue'
                 sh 'du -a'
                 sh 'cd ./my-vue-app'
                 sh 'npm install'
